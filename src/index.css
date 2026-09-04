@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-terminal: #0a0c0e;
+    --border-terminal: #1c262b;
+    --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  }
+
+  body {
+    background-color: var(--bg-terminal);
+    color: #38ef7d;
+    font-family: var(--font-mono);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+
+/* Authentic CRT scanline overlay */
+.crt-overlay {
+  position: relative;
+}
+.crt-overlay::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  z-index: 40;
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* Phosphor Glow Themes */
+.theme-green {
+  --term-glow: 0 0 10px rgba(56, 239, 125, 0.45);
+  --term-color: #38ef7d;
+  --term-accent: #11998e;
+  --term-dim: #1e5939;
+  --term-highlight: #a8ff78;
+}
+
+.theme-amber {
+  --term-glow: 0 0 10px rgba(255, 179, 71, 0.45);
+  --term-color: #ffb347;
+  --term-accent: #ff7e5f;
+  --term-dim: #6d4416;
+  --term-highlight: #ffdfba;
+}
+
+.theme-cyan {
+  --term-glow: 0 0 10px rgba(0, 229, 255, 0.45);
+  --term-color: #00e5ff;
+  --term-accent: #0091ea;
+  --term-dim: #004d61;
+  --term-highlight: #84ffff;
+}
+
+.glow-text {
+  text-shadow: var(--term-glow);
+}
+
+.glow-box {
+  box-shadow: var(--term-glow);
+}
+
+/* Custom terminal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090b0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #1c262b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2b3a42;
+}
