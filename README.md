@@ -6,6 +6,46 @@
 [![Tests](https://img.shields.io/badge/tests-17%20passing-38ef7d?style=flat-square&logo=vitest)](./src/core/engine.test.ts)
 [![Architecture](https://img.shields.io/badge/architecture-IBM%20S%2F370%20%7C%20z%2FArchitecture-00e5ff?style=flat-square)](./src/core/cpu.ts)
 [![UI](https://img.shields.io/badge/theme-IBM%203270%20CRT%20Phosphor-ffb347?style=flat-square)](./src/App.tsx)
+[![Demo](https://img.shields.io/badge/video-demo.webm-blue?style=flat-square)](./docs/demo.webm)
+
+---
+
+## 🎥 Walkthrough Video & Demo
+
+https://github.com/user-attachments/assets/demo.webm *(Download/view the silent video walkthrough in [`docs/demo.webm`](./docs/demo.webm))*
+
+The recorded demonstration shows:
+1. Selecting **Mission 1: The Register Ledger** and inspecting the briefing.
+2. Typing the HLASM solution in the editor (`LR`, `AR`, `SR`).
+3. Assembling the bytecode with real-time symbol resolution.
+4. Stepping through instructions with **Time-Travel (Undo)** support, observing `R15` register updates and 2-bit Condition Code changes.
+5. Verifying the solution against automated assertions with celebratory confetti.
+6. Switching to the **IBM SYSPRINT Assembly Listing** view and testing the **Amber CRT theme** and **Architecture Deep Dive**.
+
+---
+
+## 📸 Screenshots
+
+### 1. Mainframe Laboratory Workbench (IBM 3270 Green Phosphor)
+![Mainframe Laboratory Hero](./docs/screenshots/01-hero-overview.png)
+
+### 2. Live Instruction Stepping, Explainer Callout & Register Delta Highlights
+![Instruction Stepping](./docs/screenshots/03-stepping-and-registers.png)
+
+### 3. Automated Mission Verification & Celebration
+![Mission Solved](./docs/screenshots/04-mission-solved.png)
+
+### 4. Authentic IBM SYSPRINT Assembly Listing
+![SYSPRINT Listing](./docs/screenshots/05-sysprint-listing.png)
+
+### 5. IBM Amber Phosphor CRT Theme
+![Amber Theme](./docs/screenshots/06-amber-theme.png)
+
+### 6. Interactive Architecture Deep Dive Guide
+![Architecture Deep Dive](./docs/screenshots/07-architecture-deep-dive.png)
+
+### 7. Banking Sandbox: Packed Decimal (BCD) Financial Math
+![Packed Decimal Banking](./docs/screenshots/08-packed-decimal-banking.png)
 
 ---
 
@@ -84,6 +124,9 @@ Branching does not check disparate flags. The Program Status Word tracks a 2-bit
 
 ```
 mainframe-assembly-lab/
+├── docs/
+│   ├── demo.webm              # Recorded video demonstration
+│   └── screenshots/           # High-resolution application screenshots
 ├── src/
 │   ├── core/
 │   │   ├── assembler.ts       # 2-pass HLASM parser & bytecode generator
