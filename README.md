@@ -12,7 +12,9 @@
 
 ## 🎥 Walkthrough Video & Demo
 
-https://github.com/user-attachments/assets/demo.webm *(Download/view the silent video walkthrough in [`docs/demo.webm`](./docs/demo.webm))*
+![Interactive Walkthrough Demo](./docs/demo.gif)
+
+> 📹 High-definition video available at [`docs/demo.webm`](./docs/demo.webm).
 
 The recorded demonstration shows:
 1. Selecting **Mission 1: The Register Ledger** and inspecting the briefing.
