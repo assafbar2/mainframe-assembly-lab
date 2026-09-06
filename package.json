@@ -1,7 +1,9 @@
 {
   "name": "mainframe-assembly-lab",
-  "private": true,
-  "version": "0.0.0",
+  "description": "Interactive IBM Mainframe Assembly (HLASM) simulator and educational laboratory.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Assaf Barnir",
   "type": "module",
   "scripts": {
     "dev": "vite",
