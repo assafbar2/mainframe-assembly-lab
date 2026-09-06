@@ -3,10 +3,15 @@
 > **An interactive, educational simulator for IBM System/370 & z/Architecture High Level Assembler (HLASM).**  
 > Built as a playful, visual retro-computing laboratory to sit alongside modern CS compiler projects.
 
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Simulator-assafbar2.github.io%2Fmainframe--assembly--lab-success?style=for-the-badge&logo=googlechrome&logoColor=white)](https://assafbar2.github.io/mainframe-assembly-lab/)
+
 [![Tests](https://img.shields.io/badge/tests-17%20passing-38ef7d?style=flat-square&logo=vitest)](./src/core/engine.test.ts)
 [![Architecture](https://img.shields.io/badge/architecture-IBM%20S%2F370%20%7C%20z%2FArchitecture-00e5ff?style=flat-square)](./src/core/cpu.ts)
 [![UI](https://img.shields.io/badge/theme-IBM%203270%20CRT%20Phosphor-ffb347?style=flat-square)](./src/App.tsx)
 [![Demo](https://img.shields.io/badge/video-demo.webm-blue?style=flat-square)](./docs/demo.webm)
+
+### 🌐 [Launch the Live Interactive Simulator in Your Browser →](https://assafbar2.github.io/mainframe-assembly-lab/)
+> **Zero install required:** Runs 100% in your browser on desktop & mobile with instant step-by-step execution.
 
 ---
 
